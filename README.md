@@ -43,8 +43,8 @@ The repository includes a [PKGBUILD](PKGBUILD) ready for `makepkg`:
 
 ```bash
 cd link-tui
-python -m build --sdist          # generates dist/link_tui-0.1.0.tar.gz
-cp dist/link_tui-0.1.0.tar.gz .  # place the tarball next to the PKGBUILD
+python -m build --sdist          # generates dist/link_tui-<version>.tar.gz
+cp dist/link_tui-*.tar.gz .      # place the tarball next to the PKGBUILD
 makepkg -si                      # build and install with pacman
 ```
 
