@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "link-tui"
+version = "0.1.0"
+description = "TUI manager for Wi-Fi and Bluetooth networks (nmcli + bluetoothctl) with Textual"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Jorge", email = "jorgeescalera500@gmail.com"}]
+requires-python = ">=3.10"
+classifiers = [
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Terminals",
+]
+dependencies = [
+    "textual>=0.80",
+]
+
+[project.scripts]
+link-tui = "link_tui.__main__:main"
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["link_tui*"]
