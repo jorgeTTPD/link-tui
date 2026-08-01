@@ -3,6 +3,9 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+pkg/
+*.pkg.tar.zst
+src/link_tui-*/
 .venv/
 .pytest_cache/
 .ruff_cache/

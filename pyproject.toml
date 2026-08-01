@@ -21,6 +21,10 @@ dependencies = [
     "textual>=0.80",
 ]
 
+[project.urls]
+Homepage = "https://github.com/jorgeTTPD/link-tui"
+Repository = "https://github.com/jorgeTTPD/link-tui"
+
 [project.scripts]
 link-tui = "link_tui.__main__:main"
 

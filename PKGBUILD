@@ -4,6 +4,7 @@ pkgver=0.1.0
 pkgrel=1
 pkgdesc="TUI manager for Wi-Fi and Bluetooth networks"
 arch=('any')
+url="https://github.com/jorgeTTPD/link-tui"
 license=('MIT')
 depends=('python' 'python-textual>=0.80' 'python-rich' 'networkmanager' 'bluez' 'bluez-utils')
 makedepends=('python-build' 'python-installer' 'python-wheel')
